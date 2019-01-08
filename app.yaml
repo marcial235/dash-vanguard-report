@@ -1,6 +1,6 @@
 application: dash-vanguard-report
 version: 1
-runtime: python3
+runtime: python36
 api_version: 1
 handlers:
 - url: /.*
