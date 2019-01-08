@@ -1,6 +1,6 @@
 application: dash23-app
 version: 1
-runtime: python
+runtime: python36
 api_version: 1
 handlers:
 - url: /.*
