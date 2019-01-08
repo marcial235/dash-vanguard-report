@@ -13,7 +13,7 @@ def get_logo():
     logo = html.Div([
 
         html.Div([
-            html.Img(src='https://conecta.mx/images/partners-logos/logo-23.png', height='60', width='60')
+            html.Img(src='https://www.gmodelo.mx/images/logo_gm.svg', height='60', width='60')
         ], className="ten columns padded"),
 
         html.Div([
