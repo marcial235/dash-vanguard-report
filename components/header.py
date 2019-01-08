@@ -29,7 +29,7 @@ def get_header():
 
         html.Div([
             html.H5(
-                'Inversiones Vanguard 500')
+                'Grupo Modelo, Mexico')
         ], className="twelve columns padded")
 
     ], className="row gs-header gs-text-header")
