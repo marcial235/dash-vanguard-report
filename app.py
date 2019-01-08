@@ -9,6 +9,22 @@ import plotly.graph_objs as go
 from components import Header, make_dash_table, print_button
 
 import pandas as pd
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp.util import run_wsgi_app
+
+class NotFoundPageHandler(webapp.RequestHandler):
+    def get(self):
+        self.error(404)
+        self.response.out.write('<Your 404 error html page>')
+
+application = webapp.WSGIApplication([('/.*', NotFoundPageHandler)],
+                                     debug=True)
+
+def main():
+    run_wsgi_app(application)
+
+if __name__ == "__main__":
+    main()
 
 app = dash.Dash(__name__)
 server = app.server
